@@ -41,8 +41,8 @@ Paso 12: Una vez que se haya abierto la interfaz de cypress ejecutar las pruebas
 
 ### Funcionalidades
 
-|Id |Funcionalidad	|Módulo|
-|----|------|-----|
+|Id |Funcionalidad	|
+|----|------|
 |FN01|	members                                        |
 |FN02|	pages                                          |
 |FN03|	tags                                           |
