@@ -21,15 +21,19 @@ context('Actions', () => {
       cy.contains('New tag').click();
       cy.wait(1000)
       cy.screenshot(); 
-      cy.get('#tag-name').type(datapool[3].tag_name);
+      cy.get('#tag-name').type(datapool[4].tag_name);
       cy.wait(1000)
       cy.screenshot();
-      cy.get('.input-color > .gh-input').type(datapool[3].tag_color);
-      cy.wait(1000)
-      cy.screenshot();           
-      cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/div/section/div/div[1]/div[2]/input').type(cy.faker.lorem.words(40));
-      cy.wait(1000)
+      // cy.get('.input-color > .gh-input').type(datapool[3].tag_color);
+      // cy.wait(1000)
+      // cy.screenshot();           
+      // cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/div/section/div/div[1]/div[2]/input').type(cy.faker.lorem.words(40));
+      // cy.wait(1000)
+      // cy.screenshot();
+      cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/section/div[1]/div[1]/button/span').click();
+      cy.wait(1000);
       cy.screenshot();
+      cy.get('#meta-title')
       cy.contains('Save').click();
       cy.wait(1000)
       cy.screenshot();

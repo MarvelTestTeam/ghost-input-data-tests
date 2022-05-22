@@ -14,7 +14,7 @@ context('Actions', () => {
       cy.screenshot();
     })
   
-    it('PR005', () => {
+    it('PR006', () => {
       cy.contains('Tags').click();  
       cy.wait(1000)
       cy.screenshot(); 
@@ -27,16 +27,13 @@ context('Actions', () => {
       cy.get('.input-color > .gh-input').type(datapool[3].tag_color);
       cy.wait(1000)
       cy.screenshot();           
-      cy.get('.input-color > .gh-input').type(datapool[3].tag_slug);
+      cy.get('#tag-slug').type(datapool[3].tag_slug);
       cy.wait(1000)
       cy.screenshot();
       cy.contains('Save').click();
       cy.wait(1000)
       cy.screenshot();
       cy.contains('Tags').click();
-      cy.wait(1000)
-      cy.screenshot();
-      cy.get('.modal-footer > .gh-btn-red > span').click();
       cy.wait(1000)
       cy.screenshot();
     })  
