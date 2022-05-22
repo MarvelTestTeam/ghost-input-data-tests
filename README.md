@@ -1,3 +1,6 @@
+# EJECUCIÓN AMBIENTE DE PRUEBAS CON GENERACIÓN DE DATOS USANDO CYPRESS - SEMANA 7
+
+## PASO A PASO
 Paso 1: Instalar Docker, ingrese a la siguiente pagina https://docs.docker.com/desktop/ y elija su sistema operativo luego siga las intrucciones de instalación. 
 
 Paso 2: Ingrese a la pagina https://hub.docker.com/_/ghost?tab=description escoger la version 4.47.0 y asiganr el puerto 3002, esto lo debera hacer en la terminal de su computador una vez haya instalado docker. Para este paso tambien puede simplemente ejecutar el siguiente comando:
@@ -26,8 +29,8 @@ Paso 12: Una vez que se haya abierto la interfaz de cypress ejecutar las pruebas
 
 DATOS DEL PROYECTO
 
-|Datos Ghost|
-|---|-----|
+## Datos Ghost
+
 |-----|----|
 |Usuario|	misopruebasautomatizadas@gmail.com|
 |Pass	|Asdfg12345!|
