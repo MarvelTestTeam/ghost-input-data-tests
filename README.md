@@ -27,6 +27,12 @@ Paso 11: Ejecutar en la terminal, estando ubicado en la carpeta del proyecto clo
 
 Paso 12: Una vez que se haya abierto la interfaz de cypress ejecutar las pruebas dando clic en Run 120 integration specs
 
+## Issues de Ghost
+
+Los issues encontrados en la herramienta ghost fueron reportados en el espacio para issues del repositorio, a continuación el link para acceder:
+
+https://github.com/MarvelTestTeam/ghost-input-data-tests/issues
+
 ## DATOS DEL PROYECTO
 
 ### Datos Ghost
