@@ -27,7 +27,7 @@ context('Actions', () => {
       cy.get('.input-color > .gh-input').type(datapool[3].tag_color);
       cy.wait(1000)
       cy.screenshot();           
-      cy.get('.input-color > .gh-input').type(datapool[3].tag_slug);
+      cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/div/section/div/div[1]/div[2]/input').type(cy.faker.lorem.words(40));
       cy.wait(1000)
       cy.screenshot();
       cy.contains('Save').click();

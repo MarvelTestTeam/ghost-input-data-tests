@@ -23,8 +23,10 @@ context('Actions', () => {
         title += ' ' + cy.faker.lorem.words(5)
       }
       cy.xpath("//textarea[@placeholder='Post title']").type(title)
+      cy.wait(1000);
       cy.screenshot();
       cy.get('.koenig-editor__editor-wrapper').type(cy.faker.lorem.paragraphs(3))
+      cy.wait(1000);
       cy.contains(('Publish')).should('not.exist')
       cy.screenshot();
     })
