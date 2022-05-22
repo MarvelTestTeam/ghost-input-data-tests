@@ -24,6 +24,7 @@ DATOS DEL PROYECTO
 
 |Datos Ghost|
 |--------|
+|-----|----|
 |Usuario|	misopruebasautomatizadas@gmail.com|
 |Pass	|Asdfg12345!|
 |Puerto|	3002|
