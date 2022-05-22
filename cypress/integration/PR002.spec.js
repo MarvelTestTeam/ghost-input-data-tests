@@ -12,16 +12,18 @@ context('Actions', () => {
       cy.screenshot();
     })
   
-    it('PR001', () => {
-      cy.contains(('Tags')).click();
-      cy.screenshot();      
+    it('PR002', () => {
+      cy.contains(('Tags')).click();  
+      cy.screenshot(); 
       cy.contains(('New tag')).click();
       cy.screenshot(); 
       cy.get('#tag-name').type(cy.faker.lorem.words());
-      cy.screenshot();      
-      cy.contains('Save').click();
+      cy.screenshot();
+      cy.get('.input-color > .gh-input').type(cy.faker.lorem.words());
       cy.screenshot();
       cy.contains(('Tags')).click();
+      cy.screenshot();
+      cy.get('.gh-btn-red > span').click();
       cy.screenshot();
     })  
   })
