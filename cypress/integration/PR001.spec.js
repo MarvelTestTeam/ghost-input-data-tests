@@ -1,5 +1,5 @@
-/// <reference types="cypress" />
 cy.faker = require('faker');
+
 context('Actions', () => {
     beforeEach(() => {
       cy.visit('http://localhost:3002/ghost/#/signin');
