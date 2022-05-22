@@ -39,6 +39,25 @@ Paso 12: Una vez que se haya abierto la interfaz de cypress ejecutar las pruebas
 |Version	|4.47|
 
 
+### Funcionalidades
+
+|Id |Funcionalidad	|Módulo|
+|----|------|-----|
+|FN01|	members                                        |
+|FN02|	pages                                          |
+|FN03|	tags                                           |
+|FN04|	posts                                          |
+|FN05|	/settings/design/brand                         |
+|FN06|	/settings/desing/site/wide/color               |
+|FN07|	/settings/desing/post/Email signup text        |
+|FN08|	/settings/navigation                           |
+|FN09|	/settings/staff                                |
+|FN10|	/settings/members                              |
+|FN11|	/settings/newsletters                          |
+|FN12|	/settings/integrations/slack                   |
+|FN13|	/settings/code-injection                       |
+|FN14|	login                                          |
+
 
 
 
