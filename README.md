@@ -27,7 +27,7 @@ Paso 11: Ejecutar en la terminal, estando ubicado en la carpeta del proyecto clo
 
 Paso 12: Una vez que se haya abierto la interfaz de cypress ejecutar las pruebas dando clic en Run 120 integration specs
 
-## Issues de Ghost
+## Issues -> defectos por manejo de datos inválidos
 
 Los issues encontrados en la herramienta ghost fueron reportados en el espacio para issues del repositorio, a continuación el link para acceder:
 
