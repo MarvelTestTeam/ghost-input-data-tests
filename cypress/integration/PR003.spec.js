@@ -8,22 +8,30 @@ context('Actions', () => {
       cy.screenshot();
       cy.get('input[name="password"]').type('Asdfg12345!');
       cy.screenshot();
-      cy.get(('[id=ember11]')).click();
+      cy.get('[id=ember11]').click();
+      cy.wait(1000)
       cy.screenshot();
     })
   
     it('PR003', () => {
-      cy.contains(('Tags')).click();  
+      cy.contains('Tags').click();  
+      cy.wait(1000)
       cy.screenshot(); 
-      cy.contains(('New tag')).click();
+      cy.contains('New tag').click();
+      cy.wait(1000)
       cy.screenshot(); 
-      cy.get('#tag-name').type(datapool[0].tag_name);
+      cy.get('#tag-name').type(datapool[1].tag_name);
+      cy.wait(1000)
       cy.screenshot();
-      cy.get('.input-color > .gh-input').type(datapool[0].tag_color);
+      cy.get('.input-color > .gh-input').type(datapool[1].tag_color);
+      cy.wait(1000)
       cy.screenshot();
+      cy.wait(1000)
       cy.contains('Save').click();
+      cy.wait(1000)
       cy.screenshot();
-      cy.contains(('Tags')).click();
+      cy.contains('Tags').click();
+      cy.wait(1000)
       cy.screenshot();
     })  
   })
