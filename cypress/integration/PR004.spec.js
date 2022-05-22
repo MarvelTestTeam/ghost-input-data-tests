@@ -8,7 +8,7 @@ context('Actions', () => {
       cy.screenshot();
       cy.get('input[name="password"]').type('Asdfg12345!');
       cy.screenshot();
-      cy.get('[id=ember11]').click();
+      cy.xpath("//span[.='Sign in →']").click();
       cy.wait(1000)
       cy.screenshot();
     })
