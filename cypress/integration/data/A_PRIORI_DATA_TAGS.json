@@ -18,8 +18,8 @@
           "facebook_description":"pets facebook account"
       },
       "tag_code_injection": {
-          "tag_header":"p { color: #3ee568; }",
-          "tag_footer":"p { color: #3ee568; }"
+          "tag_header":"Header Style",
+          "tag_footer":"Footer Style"
       }
     },
     {
@@ -41,8 +41,8 @@
           "facebook_description":"computers facebook account"
       },
       "tag_code_injection": {
-          "tag_header":"p { color: #231ff4; }",
-          "tag_footer":"p { color: #231ff4; }"
+        "tag_header":"Header Style",
+        "tag_footer":"Footer Style"
       }
     },
     {
@@ -64,8 +64,8 @@
           "facebook_description":"books facebook account"
       },
       "tag_code_injection": {
-          "tag_header":"p { color: #f2852c; }",
-          "tag_footer":"p { color: #f2852c; }"
+        "tag_header":"Header Style",
+        "tag_footer":"Footer Style"
       }
     },
     {
@@ -87,8 +87,8 @@
           "facebook_description":"travels facebook account"
       },
       "tag_code_injection": {
-          "tag_header":"p { color: #e8f43e; }",
-          "tag_footer":"p { color: #e8f43e; }"
+        "tag_header":"Header Style",
+        "tag_footer":"Footer Style"
       }
     },
     {
@@ -110,8 +110,8 @@
           "facebook_description":"foods facebook account"
       },
       "tag_code_injection": {
-          "tag_header":"p { color: #a56d55; }",
-          "tag_footer":"p { color: #a56d55; }"
+        "tag_header":"Header Style",
+        "tag_footer":"Footer Style"
       }
     },
     {
@@ -133,8 +133,8 @@
           "facebook_description":"cars facebook account"
       },
       "tag_code_injection": {
-          "tag_header":"p { color: #403535; }",
-          "tag_footer":"p { color: #403535; }"
+        "tag_header":"Header Style",
+        "tag_footer":"Footer Style"
       }
     }
    ]

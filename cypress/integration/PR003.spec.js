@@ -20,10 +20,10 @@ context('Actions', () => {
       cy.contains('New tag').click();
       cy.wait(1000)
       cy.screenshot(); 
-      cy.get('#tag-name').type(datapool[1].tag_name);
+      cy.get('#tag-name').type(datapool[0].tag_name);
       cy.wait(1000)
       cy.screenshot();
-      cy.get('.input-color > .gh-input').type(datapool[1].tag_color);
+      cy.get('.input-color > .gh-input').type(datapool[0].tag_color);
       cy.wait(1000)
       cy.screenshot();
       cy.wait(1000)

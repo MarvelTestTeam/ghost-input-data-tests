@@ -21,10 +21,10 @@ context('Actions', () => {
       cy.contains('New tag').click();
       cy.wait(1000)
       cy.screenshot(); 
-      cy.get('#tag-name').type(datapool[3].tag_name);
+      cy.get('#tag-name').type(datapool[2].tag_name);
       cy.wait(1000)
       cy.screenshot();
-      cy.get('.input-color > .gh-input').type(datapool[3].tag_color);
+      cy.get('.input-color > .gh-input').type(datapool[2].tag_color);
       cy.wait(1000)
       cy.screenshot();           
       cy.get('#tag-description').type(cy.faker.lorem.words(150));

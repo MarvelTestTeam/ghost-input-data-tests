@@ -36,8 +36,5 @@ context('Actions', () => {
       cy.contains('Tags').click();
       cy.wait(1000)
       cy.screenshot();
-      cy.get('.modal-footer > .gh-btn-red > span').click();
-      cy.wait(1000)
-      cy.screenshot();
     })  
   })

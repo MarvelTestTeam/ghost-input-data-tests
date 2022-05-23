@@ -1,4 +1,5 @@
-const datapool = require("../integration/data/A_PRIORI_DATA_TAGS.json");
+const datapool = require("./data/A_PRIORI_DATA_TAGS.json");
+cy.faker = require('faker')
 
 context('Actions', () => {
     beforeEach(() => {
@@ -13,21 +14,21 @@ context('Actions', () => {
       cy.screenshot();
     })
   
-    it('PR004', () => {
+    it('PR019', () => {
       cy.contains('Tags').click();  
       cy.wait(1000)
       cy.screenshot(); 
       cy.contains('New tag').click();
       cy.wait(1000)
       cy.screenshot(); 
-      cy.get('#tag-name').type(datapool[1].tag_name);
+      cy.get('#tag-name').type(datapool[4].tag_name);
       cy.wait(1000)
       cy.screenshot();
-      cy.get('.input-color > .gh-input').type(datapool[1].tag_color);
-      cy.wait(1000)
-      cy.screenshot();           
-      cy.get('#tag-description').type(datapool[1].tag_description);
-      cy.wait(1000)
+      cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/section/div[3]/div[1]/button/span').click();
+      cy.wait(1000);
+      cy.screenshot();
+      cy.get('#og-title').type(cy.faker.lorem.words(40));
+      cy.wait(1000);
       cy.screenshot();
       cy.contains('Save').click();
       cy.wait(1000)
