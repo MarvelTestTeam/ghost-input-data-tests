@@ -1,9 +1,8 @@
-
 describe('Escenarios datos Presudo-Aleatorios', () => {
     beforeEach(() => {
     })
     
-    it('Escenario 112: Pseudo-Aleatorio Create member with name, email and note', () => {
+    it('Escenario 119: Pseudo-Aleatorio Edit email to last member', () => {
       
       cy.fixture('configuration').then((configuration)  => {
   
@@ -24,14 +23,10 @@ describe('Escenarios datos Presudo-Aleatorios', () => {
   
           cy.contains('a', 'Members').click()
           cy.wait(2000)
-          cy.contains('New member').click()
           cy.wait(2000)
-          cy.get('[disabled]').click({force: true})
-          cy.get('input[id="member-name"]').type(datapool.body[1].name_member, {force: true})
-          cy.wait(2000)
-          cy.get('input[id=member-email]').type(datapool.body[1].email_member, {force: true})
-          cy.wait(2000)
-          cy.get('#member-note').type(datapool.body[1].note_member, {force: true})
+          cy.get('table[class="gh-list"]').last().click()
+          cy.wait(2000)   
+          cy.get('input[id=member-email]').clear().type(datapool.body[8].email_member, {force: true})
           cy.wait(2000)
           cy.get('.gh-main').scrollTo('top')
           cy.wait(2000)
@@ -39,10 +34,11 @@ describe('Escenarios datos Presudo-Aleatorios', () => {
           cy.wait(2000)
           cy.get('[disabled]').click({force: true})
           cy.visit(configuration.URL_GHOST+"/#/members")
-          cy.wait(2000)     
+          cy.wait(2000)   
+          
         })
       })
+
     })
-  });
-  
-  
+
+})
