@@ -26,7 +26,8 @@ context('Actions', () => {
         cy.wait(2000);
         cy.xpath('//button[@title="Settings"]/span').click()
         cy.wait(2000);
-        cy.get('#author-list').click();
+        let url = cy.faker.lorem.words(1);
+        cy.xpath('/html//input[@id="url"]').type(url)
         cy.wait(2000);
         cy.xpath('//div[@class="flex flex-row"]/section//a[@href="#/pages/"]/span').click();
         cy.wait(2000);
