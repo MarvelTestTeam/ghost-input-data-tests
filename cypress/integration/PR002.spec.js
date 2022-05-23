@@ -1,4 +1,4 @@
-cy.faker = require('faker');
+//cy.faker = require('faker');
 
 context('Actions', () => {
     beforeEach(() => {

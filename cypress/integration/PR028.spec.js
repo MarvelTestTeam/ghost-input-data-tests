@@ -1,5 +1,5 @@
 const datapool = require("./data/A_PRIORI_DATA_PROFILE.json");
-cy.faker = require('faker')
+//cy.faker = require('faker')
 
 context('Actions', () => {
     beforeEach(() => {
