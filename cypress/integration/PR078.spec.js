@@ -13,7 +13,7 @@ context('Actions', () => {
 
     })
 
-    it('PR073', () => {
+    it('PR078', () => {
         cy.wait(2000);
         cy.contains('Pages').click();
         cy.wait(2000);
@@ -24,13 +24,9 @@ context('Actions', () => {
         cy.wait(2000);
         cy.xpath('//div[@class="flex flex-row"]/section//article/div[@class="koenig-editor__editor-wrapper"]/div').type(datapool1[0].title)
         cy.wait(2000);
-        cy.xpath('//button[@title="Settings"]/span').click()
+        cy.xpath('//button[@class="gh-btn gh-editor-preview-trigger"]/span[.="Preview"]').click();
         cy.wait(2000);
-        cy.get('#author-list').click();
-        cy.wait(2000);
-        cy.xpath('//div[@class="flex flex-row"]/section//a[@href="#/pages/"]/span').click();
-        cy.wait(2000);
-        cy.contains(title).should('exist');
+
 
 
 

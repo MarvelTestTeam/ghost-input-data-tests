@@ -13,24 +13,18 @@ context('Actions', () => {
 
     })
 
-    it('PR073', () => {
+    it('PR081', () => {
         cy.wait(2000);
         cy.contains('Pages').click();
         cy.wait(2000);
         cy.contains('New page').click();
         cy.wait(2000);
         let title = cy.faker.lorem.words(5);
-        cy.xpath('//div[@class="flex flex-row"]/section//textarea[@placeholder="Page title"]').type(title)
+        //cy.xpath('//div[@class="flex flex-row"]/section//textarea[@placeholder="Page title"]').type(title)
         cy.wait(2000);
-        cy.xpath('//div[@class="flex flex-row"]/section//article/div[@class="koenig-editor__editor-wrapper"]/div').type(datapool1[0].title)
-        cy.wait(2000);
-        cy.xpath('//button[@title="Settings"]/span').click()
-        cy.wait(2000);
-        cy.get('#author-list').click();
-        cy.wait(2000);
-        cy.xpath('//div[@class="flex flex-row"]/section//a[@href="#/pages/"]/span').click();
-        cy.wait(2000);
-        cy.contains(title).should('exist');
+        //cy.xpath('//button[@class="gh-btn gh-editor-preview-trigger"]/span[.="Preview"]').click();
+
+
 
 
 
