@@ -9,31 +9,31 @@ context('Actions', () => {
       cy.get('input[name="password"]').type('Asdfg12345!');
       cy.screenshot();
       cy.xpath("//span[.='Sign in →']").click();
-      cy.wait(1000)
+      cy.wait(8000)
       cy.screenshot();
     })
   
     it('PR017', () => {
       cy.contains('Tags').click();  
-      cy.wait(1000)
+      cy.wait(8000)
       cy.screenshot(); 
       cy.contains('New tag').click();
-      cy.wait(1000)
+      cy.wait(8000)
       cy.screenshot(); 
       cy.get('#tag-name').type(datapool[4].tag_name);
-      cy.wait(1000)
+      cy.wait(8000)
       cy.screenshot();
       cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/section/div[2]/div[1]/button/span').click();
-      cy.wait(1000);
+      cy.wait(8000);
       cy.screenshot();
       cy.get('#twitter-description').type(cy.faker.lorem.words(40));
-      cy.wait(1000);
+      cy.wait(8000);
       cy.screenshot();
       cy.contains('Save').click();
-      cy.wait(1000)
+      cy.wait(8000)
       cy.screenshot();
       cy.contains('Tags').click();
-      cy.wait(1000)
+      cy.wait(8000)
       cy.screenshot();
     })  
   })

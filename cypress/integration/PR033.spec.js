@@ -14,7 +14,7 @@ context('Actions', () => {
     })
   
     it('PR033', () => {
-      cy.wait(1000);
+      cy.wait(8000);
       cy.xpath('/html/body/div[2]/div/nav[1]/div/section/div[1]/ul[2]/li[1]/a[1]').click()
       cy.xpath('//a[@title="New post"]/span').click()
       cy.screenshot();
@@ -23,10 +23,10 @@ context('Actions', () => {
         title += ' ' + cy.faker.lorem.words(5)
       }
       cy.xpath("//textarea[@placeholder='Post title']").type(title)
-      cy.wait(1000);
+      cy.wait(8000);
       cy.screenshot();
       cy.get('.koenig-editor__editor-wrapper').type(cy.faker.lorem.paragraphs(3))
-      cy.wait(1000);
+      cy.wait(8000);
       cy.contains(('Publish')).should('not.exist')
       cy.screenshot();
     })

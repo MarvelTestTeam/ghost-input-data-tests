@@ -13,7 +13,7 @@ context('Actions', () => {
     })
   
     it('PR053', () => {
-      cy.wait(1000);
+      cy.wait(8000);
       cy.xpath('/html/body/div[2]/div/nav[1]/div/section/div[1]/ul[2]/li[1]/a[1]').click()
       cy.xpath('//a[@title="New post"]/span').click()
       cy.screenshot();

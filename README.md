@@ -7,7 +7,7 @@ Paso 2: Ingrese a la pagina https://hub.docker.com/_/ghost?tab=description escog
 
 docker run -d -e url=http://localhost:3002 -p 3002:2368 --name ghost_4.47.0 ghost:4.47.0
 
-Paso 3: Acceder a un navegador web e ingresar a la URL http://localhost:3002/ghost, el sistema mostrará el formulario para crear el sitio y la cuenta administrativa, para los datos del usuario administrador se debe poner en el campo email "misopruebasautomatizadas@gmail.com" (las comillas solo son delimitadores el texto en el campo se debe poner sin comillas) y en el campo password "Asdfg12345!" (las comillas solo son delimitadores el texto en el campo se debe poner sin comillas), una vez terminado de diligencia el formulario el sistema lo llevará a el área administrativa de la aplicación
+Paso 3: Acceder a un navegador web e ingresar a la URL http://localhost:3002/ghost, el sistema mostrará el formulario para crear el sitio y la cuenta administrativa, para los datos del usuario administrador se debe poner en el campo Email address "misopruebasautomatizadas@gmail.com" (las comillas solo son delimitadores el texto en el campo se debe poner sin comillas) y en el campo password "Asdfg12345!" (las comillas solo son delimitadores el texto en el campo se debe poner sin comillas), una vez terminado de diligencia el formulario el sistema lo llevará a el área administrativa de la aplicación
 
 Paso 4: Installar Node 16.13.0, ingrese al link https://nodejs.org/es/download/  escoja su sistema operativo y siga las intrrucciones colocando npm Install
 
