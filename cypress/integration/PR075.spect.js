@@ -13,7 +13,7 @@ context('Actions', () => {
 
     })
 
-    it('PR072', () => {
+    it('PR073', () => {
         cy.wait(2000);
         cy.contains('Pages').click();
         cy.wait(2000);
@@ -23,16 +23,19 @@ context('Actions', () => {
         cy.xpath('//div[@class="flex flex-row"]/section//textarea[@placeholder="Page title"]').type(title)
         cy.wait(2000);
         cy.xpath('//div[@class="flex flex-row"]/section//article/div[@class="koenig-editor__editor-wrapper"]/div').type(datapool1[0].title)
-        cy.contains('Publish').click();
         cy.wait(2000);
-        cy.xpath('//span[.="Publish"]').click();
+        cy.xpath('//div[@class="flex flex-row"]/section//a[@href="#/pages/"]/span').click();
         cy.wait(2000);
-        let title2 = cy.faker.lorem.words(20);
-        cy.xpath('//div[@class="flex flex-row"]/section//article/div[@class="koenig-editor__editor-wrapper"]/div').clear().type(title2)
+
+        cy.contains(title).click();
+        cy.xpath('//div[@class="flex flex-row"]/section//textarea[@placeholder="Page title"]').clear();
         cy.wait(2000);
-        cy.contains('Update').click();
-        cy.xpath('//div[@id="ember-basic-dropdown-wormhole"]/div/footer/button[2]/span[.="Update"]').click();
-        cy.contains('Updated').should('be.visible');
+        cy.xpath('//div[@class="flex flex-row"]/section//article/div[@class="koenig-editor__editor-wrapper"]/div').clear();
+        cy.wait(2000);
+        cy.xpath('//div[@class="flex flex-row"]/section//a[@href="#/pages/"]/span').click();
+        cy.wait(2000);
+        cy.contains("(Untitled)").should('exist');
+
 
 
     })
