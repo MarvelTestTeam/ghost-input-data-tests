@@ -21,9 +21,9 @@ context('Actions', () => {
       cy.xpath('/html/body/div[1]/div/ul/li[4]/a').click();
       cy.wait(1000)
       cy.screenshot(); 
-      cy.get('#user-bio').type('{selectAll}');
-      cy.get('#user-bio').type('{backspace}', {force: true});
-      cy.get('#user-bio').type(datapool[0].bio, {force: true});
+      cy.get('#user-twitter').type('{selectAll}');
+      cy.get('#user-twitter').type('{backspace}', {force: true});
+      cy.get('#user-twitter').type(datapool[0].twitter_profile, {force: true});
       cy.wait(1000)
       cy.screenshot();
       cy.xpath('/html/body/div[2]/div/main/section/div/header/section/button/span').click();
