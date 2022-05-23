@@ -14,7 +14,7 @@ context('Actions', () => {
       cy.screenshot();
     })
   
-    it('PR008', () => {
+    it('PR013', () => {
       cy.contains('Tags').click();  
       cy.wait(1000)
       cy.screenshot(); 
@@ -27,13 +27,16 @@ context('Actions', () => {
       cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/section/div[1]/div[1]/button/span').click();
       cy.wait(1000);
       cy.screenshot();
-      cy.get('#meta-title').type(datapool[4].tag_meta_data.meta_title);
+      cy.get('#canonical-url').type(cy.faker.lorem.words(5));
       cy.wait(1000);
       cy.screenshot();
       cy.contains('Save').click();
       cy.wait(1000)
       cy.screenshot();
       cy.contains('Tags').click();
+      cy.wait(1000)
+      cy.screenshot();
+      cy.get('.modal-footer > .gh-btn-red > span').click();
       cy.wait(1000)
       cy.screenshot();
     })  

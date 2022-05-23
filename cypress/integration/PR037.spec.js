@@ -21,6 +21,7 @@ context('Actions', () => {
       cy.xpath("//textarea[@placeholder='Post title']").type(title).clear()
       cy.screenshot();
       cy.get('.koenig-editor__editor-wrapper').type(cy.faker.lorem.paragraphs(3)).clear()
+      cy.wait(1000);
       cy.screenshot();
       cy.contains(('Publish')).click()
       cy.screenshot();

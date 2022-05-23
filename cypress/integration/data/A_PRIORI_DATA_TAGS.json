@@ -5,9 +5,9 @@
       "tag_slug": "pets-tag",
       "tag_description": "posts about pets",
       "tag_meta_data": {
-          "meta]_title":"pets Info",
+          "meta_title":"pets Info",
           "meta_description":"info about pets",
-          "meta_canonical_url":"pets-info"
+          "meta_canonical_url":"http://localhost:3002/tag/pets-tag"
       },
       "tag_twitter_card": {
           "twitter_title":"pets twitter",
@@ -28,9 +28,9 @@
       "tag_slug": "computers-tag",
       "tag_description": "posts about computers",
       "tag_meta_data": {
-          "meta]_title":"computers info",
+          "meta_title":"computers info",
           "meta_description":"info about computers",
-          "meta_canonical_url":"computers-info"
+          "meta_canonical_url":"http://localhost:3002/tag/computers-tag"
       },
       "tag_twitter_card": {
           "twitter_title":"computers twitter",
@@ -51,9 +51,9 @@
       "tag_slug": "books-tag",
       "tag_description": "Posts about books",
       "tag_meta_data": {
-          "meta]_title":"books info",
+          "meta_title":"books info",
           "meta_description":"info about books",
-          "meta_canonical_url":"books-info"
+          "meta_canonical_url":"http://localhost:3002/tag/books-tag"
       },
       "tag_twitter_card": {
           "twitter_title":"books twitter",
@@ -74,9 +74,9 @@
       "tag_slug": "travels-tag",
       "tag_description": "Posts about travels",
       "tag_meta_data": {
-          "meta]_title":"travels info",
+          "meta_title":"travels info",
           "meta_description":"info about V",
-          "meta_canonical_url":"travels-info"
+          "meta_canonical_url":"http://localhost:3002/tag/travels-tag"
       },
       "tag_twitter_card": {
           "twitter_title":"travels twitter",
@@ -97,9 +97,9 @@
       "tag_slug": "foods-tag",
       "tag_description": "Posts about foods",
       "tag_meta_data": {
-          "meta]_title":"foods info",
+          "meta_title":"foods info",
           "meta_description":"info about foods",
-          "meta_canonical_url":"foods-info"
+          "meta_canonical_url":"http://localhost:3002/tag/foods-tag"
       },
       "tag_twitter_card": {
           "twitter_title":"foods twitter",
@@ -120,9 +120,9 @@
       "tag_slug": "cars-tag",
       "tag_description": "Posts about cars",
       "tag_meta_data": {
-          "meta]_title":"cars info",
+          "meta_title":"cars info",
           "meta_description":"info about cars",
-          "meta_canonical_url":"cars-info"
+          "meta_canonical_url":"http://localhost:3002/tag/cars-tag"
       },
       "tag_twitter_card": {
           "twitter_title":"cars twitter",

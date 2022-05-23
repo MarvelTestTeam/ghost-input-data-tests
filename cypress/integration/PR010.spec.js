@@ -14,7 +14,7 @@ context('Actions', () => {
       cy.screenshot();
     })
   
-    it('PR008', () => {
+    it('PR010', () => {
       cy.contains('Tags').click();  
       cy.wait(1000)
       cy.screenshot(); 
@@ -27,7 +27,7 @@ context('Actions', () => {
       cy.xpath('/html/body/div[2]/div/main/section/form/div[2]/section/div[1]/div[1]/button/span').click();
       cy.wait(1000);
       cy.screenshot();
-      cy.get('#meta-title').type(datapool[4].tag_meta_data.meta_title);
+      cy.get('#meta-description').type(datapool[4].tag_meta_data.meta_description);
       cy.wait(1000);
       cy.screenshot();
       cy.contains('Save').click();
