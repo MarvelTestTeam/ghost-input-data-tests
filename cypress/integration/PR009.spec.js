@@ -1,5 +1,4 @@
 const datapool = require("./data/A_PRIORI_DATA_TAGS.json");
-cy.faker = require('faker')
 
 context('Actions', () => {
     beforeEach(() => {
@@ -34,9 +33,6 @@ context('Actions', () => {
       cy.wait(1000)
       cy.screenshot();
       cy.contains('Tags').click();
-      cy.wait(1000)
-      cy.screenshot();
-      cy.get('.modal-footer > .gh-btn-red > span').click();
       cy.wait(1000)
       cy.screenshot();
     })  

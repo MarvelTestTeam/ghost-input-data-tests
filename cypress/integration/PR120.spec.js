@@ -2,7 +2,7 @@ describe('Escenarios datos Presudo-Aleatorios', () => {
     beforeEach(() => {
     })
     
-    it('Escenario 119: Pseudo-Aleatorio Edit note to last member', () => {
+    it('Escenario 120: Pseudo-Aleatorio Edit note to last member', () => {
       
       cy.fixture('configuration').then((configuration)  => {
   
