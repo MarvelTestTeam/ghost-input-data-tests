@@ -2,7 +2,7 @@ describe('Escenarios datos Presudo-Aleatorios', () => {
     beforeEach(() => {
     })
     
-    it('Escenario 114: Pseudo-Aleatorio Create member with name and label only', () => {
+    it('Escenario 115: Pseudo-Aleatorio Create member with name and label only', () => {
       
       cy.fixture('configuration').then((configuration)  => {
   
