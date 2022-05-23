@@ -19,8 +19,5 @@ import {faker} from "@faker-js/faker";
 require('cypress-xpath')
 cy.faker = faker;
 
-
-
-
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
