@@ -13,7 +13,7 @@ context('Actions', () => {
 
     })
 
-    it('PR073', () => {
+    it('PR082', () => {
         cy.wait(2000);
         cy.contains('Pages').click();
         cy.wait(2000);

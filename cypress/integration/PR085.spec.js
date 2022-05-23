@@ -13,7 +13,7 @@ context('Actions', () => {
 
     })
 
-    it('PR079', () => {
+    it('PR083', () => {
         cy.wait(2000);
         cy.contains('Pages').click();
         cy.wait(2000);
@@ -24,9 +24,9 @@ context('Actions', () => {
         cy.wait(2000);
         cy.xpath('//div[@class="flex flex-row"]/section//article/div[@class="koenig-editor__editor-wrapper"]/div').click()
         cy.wait(2000);
-        cy.xpath('//button[@class="gh-btn gh-editor-preview-trigger"]/span[.="Preview"]').click();
+        cy.xpath('//button[@title="Settings"]/span').click()
         cy.wait(2000);
-
+        cy.contains('Delete').click()
 
 
 
